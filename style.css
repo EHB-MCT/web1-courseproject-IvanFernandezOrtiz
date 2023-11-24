@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
+
+body {
+	margin: 0;
+	font-family: "Libre Baskerville", serif;
+}
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 18px;
+	background-color: rgb(25, 58, 77);
+	color: white;
+	height: 50px;
+	padding: 1em;
+}
+
+.logo {
+	width: 150px;
+}
+
+.menu {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+}
+.menu > li {
+	overflow: hidden;
+	margin: 0 1rem;
+}
+
+.menu li a {
+	text-decoration: none;
+	color: #ffffff;
+}
+.menu li a:hover {
+	text-decoration: underline;
+}
+
+.menu-button-container {
+	height: 100%;
+	width: 30px;
+	display: none;
+	cursor: pointer;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+/* Hide checkbox */
+#menu-toggle {
+	display: none;
+}
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+	display: block;
+	background-color: white;
+	position: absolute;
+	height: 4px;
+	width: 30px;
+	transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+	border-radius: 2px;
+}
+
+.menu-button::before {
+	content: "";
+	margin-top: -8px;
+}
+
+.menu-button::after {
+	content: "";
+	margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+	margin-top: 0px;
+	transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+	background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+	margin-top: 0px;
+	transform: rotate(-405deg);
+}
+
+header {
+	height: 75vh;
+	width: 50%;
+}
+.intro {
+	background-color: yellow;
+}
+h1 {
+	font-size: 30px;
+}
+section {
+	background: green;
+}
+.hobbies {
+	background: orange;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: left;
+	justify-content: space-between;
+}
+.hobbies div {
+	width: 24%;
+	background: teal;
+}
+.hobbies img {
+	width: 100%;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+}
+footer {
+	background-color: rgb(25, 58, 77);
+	text-align: center;
+	color: white;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+footer .socials {
+	margin: 0px 50px;
+	flex: 1;
+	background-color: rebeccapurple;
+}
+footer img {
+	width: 40px;
+	margin: 20px 10px;
+}
+footer h2 {
+	color: #eee;
+}
+a.button {
+	background-color: #4c6594;
+	padding: 10px 20px;
+	color: #fff;
+	border-radius: 7px;
+	font-weight: bold;
+	text-decoration: none;
+}
+.name {
+	color: rgb(12, 126, 88);
+}
+
+@media screen and (max-width: 1024px) {
+	.hobbies div {
+		width: 48%;
+	}
+}
+@media screen and (max-width: 768px) {
+	/* .desktop {
+		display: none;
+	}
+	.mobile {
+		display: block;
+	} */
+	.hobbies img {
+		width: 50%;
+	}
+	header {
+		background-image: none;
+	}
+	.intro {
+		width: 100%;
+	}
+	.hobbies div {
+		width: 100%;
+	}
+
+	.menu-button-container {
+		display: flex;
+	}
+	/* dropdown menu */
+	.menu {
+		position: absolute;
+		top: 0;
+		margin-top: 80px;
+		left: 0;
+		flex-direction: column;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+	}
+	#menu-toggle ~ .menu li {
+		height: 0;
+		margin: 0;
+		padding: 0;
+		border: 0;
+		transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+	}
+	#menu-toggle:checked ~ .menu li {
+		border: 1px solid #333;
+		height: 2.5em;
+		padding: 0.5em;
+		transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+	}
+	.menu > li {
+		display: flex;
+		justify-content: center;
+		margin: 0;
+		padding: 0.5em 0;
+		width: 100%;
+		color: white;
+		background-color: #104749;
+	}
+	.menu > li:not(:last-child) {
+		border-bottom: 1px solid #444;
+	}
+}
+
+/* hamburger menu => https://alvarotrigo.com/blog/hamburger-menu-css/ */
