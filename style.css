@@ -89,35 +89,52 @@ nav {
 }
 
 header {
-	height: 75vh;
-	width: 50%;
+	/* margin-top: 40px; */
 }
 .intro {
-	background-color: yellow;
+	padding-top: 20vh;
+	width: 50%;
+	height: 70vh;
+}
+.index {
+	background-size: cover;
+	background-image: url(images/middleShot.png);
 }
 h1 {
 	font-size: 30px;
 }
-section {
+/* section {
 	background: green;
+} */
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+}
+.top {
+	margin-top: 5%;
+	margin-bottom: 5%;
 }
 .hobbies {
-	background: orange;
 	display: flex;
 	flex-wrap: wrap;
 	text-align: left;
 	justify-content: space-between;
+	margin-bottom: 20px;
 }
 .hobbies div {
 	width: 24%;
-	background: teal;
 }
-.hobbies img {
+
+img {
 	width: 100%;
 }
-.wrapper {
-	width: 90%;
-	margin: 0 auto;
+.about-me {
+	display: flex;
+	flex-wrap: wrap;
+}
+.about-me div {
+	flex: 1;
+	margin: 20px;
 }
 footer {
 	background-color: rgb(25, 58, 77);
@@ -125,20 +142,29 @@ footer {
 	color: white;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
 }
-footer .socials {
-	margin: 0px 50px;
+footer div {
 	flex: 1;
-	background-color: rebeccapurple;
 }
 footer img {
-	width: 40px;
-	margin: 20px 10px;
+	width: 50px;
+	height: 50px;
 }
 footer h2 {
-	color: #eee;
+	color: white;
 }
+
+.handles {
+	margin-top: 5%;
+	display: flex;
+	flex-direction: row;
+}
+
+.contact-info {
+	margin-top: 5%;
+}
+
 a.button {
 	background-color: #4c6594;
 	padding: 10px 20px;
@@ -147,8 +173,13 @@ a.button {
 	font-weight: bold;
 	text-decoration: none;
 }
+a.button:hover {
+	background-color: #6999f1;
+	text-decoration: underline;
+	/* color: black; */
+}
 .name {
-	color: rgb(12, 126, 88);
+	color: rgb(29, 197, 141);
 }
 
 @media screen and (max-width: 1024px) {
