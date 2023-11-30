@@ -10,7 +10,8 @@
 		<nav>
 			<div class="logo">
 				<a href="index.html">
-					<img src="images/logo.svg" alt="" />
+					<img src="images/logo.svg" class="desktop" alt="" />
+					<img src="images/logo-short.svg" class="mobile" alt="" />
 				</a>
 			</div>
 			<input id="menu-toggle" type="checkbox" />
@@ -18,9 +19,9 @@
 				<div class="menu-button"></div>
 			</label>
 			<ul class="menu">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="interest.html">Interests</a></li>
-				<li><a href="aboutMe.html">About me</a></li>
+				<li><a href="index.html" class="unselected-url">Home</a></li>
+				<li><a href="interest.html" class="selected-url">Interests</a></li>
+				<li><a href="aboutMe.html" class="unselected-url">About me</a></li>
 			</ul>
 		</nav>
 		<div class="wrapper top">
@@ -33,52 +34,72 @@
 			<div class="wrapper">
 				<div class="hobbies">
 					<div>
-						<img src="images/games.png" alt="" />
+						<img class="hobby-img" src="images/hk-knight.webp" alt="" />
+						<img class="hobby-img" src="images/consoles.jpg" alt="" />
+						<img class="hobby-img" src="images/pcGames.jpg" alt="" />
 						<h2>Videogames</h2>
 						<p>Playing videogames has always been a huge part in my life and it's probably my favorite way to unwind and relax</p>
 					</div>
 
 					<div>
-						<img src="images/puzzles.png" alt="" />
+						<img class="hobby-img" src="images/puzzles1.jpg" alt="" />
+						<img class="hobby-img" src="images/puzzles2.jpg" alt="" />
+						<img class="hobby-img" src="images/puzzles3.jpg" alt="" />
 						<h2>Puzzles</h2>
 						<p>I see puzzles as a fun challenge. The feeling after finding a solution is always good.</p>
 					</div>
-					
+
 					<div>
-						<img src="images/cartoon.png" alt="" />
+						<img class="hobby-img" src="images/tom&Jerry.webp" alt="" />
+						<img class="hobby-img" src="images/onePiece.png" alt="" />
+						<img class="hobby-img" src="images/Dragon-Ball-Z.webp" alt="" />
 						<h2>Anime/cartoons</h2>
 						<p>I've always loved seeing animations on screen and am still baffled at how people can show so much creativity on screen.</p>
 					</div>
 					<div>
-						<img src="images/comics.png" alt="" />
+						<img class="hobby-img" src="images/spiderman.jpg" alt="" />
+						<img class="hobby-img" src="images/manga.jpeg" alt="" />
+						<img class="hobby-img" src="images/the-last-ronin.jpg" alt="" />
 						<h2>Manga / Comics</h2>
 						<p>There are so many good stories that aren't animated or well adapted. Reading those stories straight from the source just has a different feel to it.</p>
 					</div>
+					<!-- <div class="test-img">
+						<img class="img-float" src="images/hk-knight.webp" alt="" />
+						<img class="img-float" src="images/hk-knight.webp" alt="" />
+						<img class="img-float" src="images/hk-knight.webp" alt="" />
+					</div> -->
 				</div>
 			</div>
 		</section>
+
 		<footer>
 			<div class="socials">
-				<h2>Follow</h2>
-				<hr />
+				<!-- <h2>Follow</h2>
+				<hr /> -->
 				<div class="handles">
 					<div>
-						<img src="images/twitter.png" alt="" />
-						<p>@twitterHandle</p>
+						<a href="#">
+							<img src="images/twitter.png" alt="" />
+							<p class="handle-name">@twitterHandle</p>
+						</a>
 					</div>
 					<div>
-						<img src="images/instagram.png" alt="" />
-						<p>@instagramHandle</p>
+						<a href="#">
+							<img src="images/instagram.png" alt="" />
+							<p class="handle-name">@instagramHandle</p>
+						</a>
 					</div>
 					<div>
-						<img src="images/facebook.png" alt="" />
-						<p>@facebookHandle</p>
+						<a href="#">
+							<img src="images/facebook.png" alt="" />
+							<p class="handle-name">@facebookHandle</p>
+						</a>
 					</div>
 				</div>
 			</div>
 			<div class="contact">
-				<h2>Contact</h2>
-				<hr />
+				<!-- <h2>Contact</h2>
+				<hr /> -->
 				<div class="contact-info">
 					<p>+32 468 30 59 69</p>
 					<p>Ivan.Fernandez.Ortiz@student.ehb.be</p>

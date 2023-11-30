@@ -10,7 +10,8 @@
 		<nav>
 			<div class="logo">
 				<a href="index.html">
-					<img src="images/logo.svg" alt="" />
+					<img src="images/logo.svg" class="desktop" alt="" />
+					<img src="images/logo-short.svg" class="mobile" alt="" />
 				</a>
 			</div>
 			<input id="menu-toggle" type="checkbox" />
@@ -18,15 +19,33 @@
 				<div class="menu-button"></div>
 			</label>
 			<ul class="menu">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="interest.html">Interests</a></li>
-				<li><a href="aboutMe.html">About me</a></li>
+				<li><a href="index.html" class="selected-url">Home</a></li>
+				<li><a href="interest.html" class="unselected-url">Interests</a></li>
+				<li><a href="aboutMe.html" class="unselected-url">About me</a></li>
 			</ul>
 		</nav>
 		<div class="wrapper index">
 			<header class="intro">
 				<div class="title">
-					<h1>Hello there, I'm <strong class="name">Ivan Fernandez</strong> and welcome</h1>
+					<h1>
+						Hello there, I'm
+						<div class="name">
+							<span style="--i: 1">I</span>
+							<span style="--i: 2">v</span>
+							<span style="--i: 3">a</span>
+							<span style="--i: 4">n</span>
+							<span style="--i: 5">&nbsp </span>
+							<span style="--i: 6">F</span>
+							<span style="--i: 7">e</span>
+							<span style="--i: 8">r</span>
+							<span style="--i: 9">n</span>
+							<span style="--i: 10">a</span>
+							<span style="--i: 11">n</span>
+							<span style="--i: 12">d</span>
+							<span style="--i: 13">e</span>
+							<span style="--i: 14">z</span>
+						</div>
+					</h1>
 					<h2>I'm into everything computer related</h2>
 					<p>I'm a 21yo student aspiring to pursue a carreer in multimedia.</p>
 					<p>I enjoy testing out my brain by doing different brain teasers and such. I also love coding for the same reason. Finding a solution to problems or making my code more efficient is a fun little challenge to me.</p>
@@ -35,28 +54,55 @@
 				<a class="button" href="aboutMe.html">About me</a>
 			</header>
 		</div>
+		<!-- <section>
+			<div class="animation-container">
+				<div class="lightning-container">
+					<div class="lightning white"></div>
+					<div class="lightning red"></div>
+				</div>
+				<div class="boom-container">
+					<div class="shape circle big white"></div>
+					<div class="shape circle white"></div>
+					<div class="shape triangle big yellow"></div>
+					<div class="shape disc white"></div>
+					<div class="shape triangle blue"></div>
+				</div>
+				<div class="boom-container second">
+					<div class="shape circle big white"></div>
+					<div class="shape circle white"></div>
+					<div class="shape disc white"></div>
+					<div class="shape triangle blue"></div>
+				</div>
+			</div>
+		</section> -->
 		<footer>
 			<div class="socials">
-				<h2>Follow</h2>
-				<hr />
+				<!-- <h2>Follow</h2>
+				<hr /> -->
 				<div class="handles">
 					<div>
-						<img src="images/twitter.png" alt="" />
-						<p>@twitterHandle</p>
+						<a href="#">
+							<img src="images/twitter.png" alt="" />
+							<p class="handle-name">@twitterHandle</p>
+						</a>
 					</div>
 					<div>
-						<img src="images/instagram.png" alt="" />
-						<p>@instagramHandle</p>
+						<a href="#">
+							<img src="images/instagram.png" alt="" />
+							<p class="handle-name">@instagramHandle</p>
+						</a>
 					</div>
 					<div>
-						<img src="images/facebook.png" alt="" />
-						<p>@facebookHandle</p>
+						<a href="#">
+							<img src="images/facebook.png" alt="" />
+							<p class="handle-name">@facebookHandle</p>
+						</a>
 					</div>
 				</div>
 			</div>
 			<div class="contact">
-				<h2>Contact</h2>
-				<hr />
+				<!-- <h2>Contact</h2>
+				<hr /> -->
 				<div class="contact-info">
 					<p>+32 468 30 59 69</p>
 					<p>Ivan.Fernandez.Ortiz@student.ehb.be</p>

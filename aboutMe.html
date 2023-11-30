@@ -10,7 +10,8 @@
 		<nav>
 			<div class="logo">
 				<a href="index.html">
-					<img src="images/logo.svg" alt="" />
+					<img src="images/logo.svg" class="desktop" alt="" />
+					<img src="images/logo-short.svg" class="mobile" alt="" />
 				</a>
 			</div>
 			<input id="menu-toggle" type="checkbox" />
@@ -18,9 +19,9 @@
 				<div class="menu-button"></div>
 			</label>
 			<ul class="menu">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="interest.html">Interests</a></li>
-				<li><a href="aboutMe.html">About me</a></li>
+				<li><a href="index.html" class="unselected-url">Home</a></li>
+				<li><a href="interest.html" class="unselected-url">Interests</a></li>
+				<li><a href="aboutMe.html" class="selected-url">About me</a></li>
 			</ul>
 		</nav>
 		<div class="wrapper top">
@@ -34,7 +35,7 @@
 		<div class="wrapper">
 			<section class="about-me">
 				<div>
-					<img src="images/CloseUp.png" alt="" />
+					<img src="images/CloseUp.png" class="closeUp" alt="" />
 				</div>
 				<div>
 					<h2>Who Am I?</h2>
@@ -53,26 +54,32 @@
 		</div>
 		<footer>
 			<div class="socials">
-				<h2>Follow</h2>
-				<hr />
+				<!-- <h2>Follow</h2>
+				<hr /> -->
 				<div class="handles">
 					<div>
-						<img src="images/twitter.png" alt="" />
-						<p>@twitterHandle</p>
+						<a href="#">
+							<img src="images/twitter.png" alt="" />
+							<p class="handle-name">@twitterHandle</p>
+						</a>
 					</div>
 					<div>
-						<img src="images/instagram.png" alt="" />
-						<p>@instagramHandle</p>
+						<a href="#">
+							<img src="images/instagram.png" alt="" />
+							<p class="handle-name">@instagramHandle</p>
+						</a>
 					</div>
 					<div>
-						<img src="images/facebook.png" alt="" />
-						<p>@facebookHandle</p>
+						<a href="#">
+							<img src="images/facebook.png" alt="" />
+							<p class="handle-name">@facebookHandle</p>
+						</a>
 					</div>
 				</div>
 			</div>
 			<div class="contact">
-				<h2>Contact</h2>
-				<hr />
+				<!-- <h2>Contact</h2>
+				<hr /> -->
 				<div class="contact-info">
 					<p>+32 468 30 59 69</p>
 					<p>Ivan.Fernandez.Ortiz@student.ehb.be</p>
