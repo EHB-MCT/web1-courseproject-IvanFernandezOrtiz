@@ -1,12 +1,13 @@
-#Course project
+# Course project
 
-##Bronnen
+## Bronnen
 
-###Hamburger menu
+### Hamburger menu
 
 - https://alvarotrigo.com/blog/hamburger-menu-css
 
-###Homepage animation
+### Homepage animation
+
 Lijst met verschillende demo's:
 
 - https://www.sliderrevolution.com/resources/css-animation-examples
