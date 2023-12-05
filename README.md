@@ -1,1 +1,16 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/p5P4nI8q)
+#Course project
+
+##Bronnen
+
+###Hamburger menu
+
+- https://alvarotrigo.com/blog/hamburger-menu-css
+
+###Homepage animation
+Lijst met verschillende demo's:
+
+- https://www.sliderrevolution.com/resources/css-animation-examples
+
+Gebruikte code:
+
+- https://codepen.io/bosworthco/pen/RjBvgw
