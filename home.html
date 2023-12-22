@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>IF About me</title>
+		<title>IF Home</title>
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
@@ -19,41 +19,47 @@
 				<div class="menu-button"></div>
 			</label>
 			<ul class="menu">
-				<li><a href="home.html" class="unselected-url">Home</a></li>
+				<li><a href="home.html" class="selected-url">Home</a></li>
 				<li><a href="interest.html" class="unselected-url">Interests</a></li>
-				<li><a href="aboutMe.html" class="selected-url">About me</a></li>
+				<li><a href="aboutMe.html" class="unselected-url">About me</a></li>
 			</ul>
 		</nav>
-		<div class="wrapper top">
-			<header>
+		<div class="wrapper index">
+			<header class="intro">
 				<div class="title">
-					<h1>Hi, this is me!</h1>
-					<p>I'm Ivan Fernandez and here's a glimpse into who I am.</p>
+					<h1>
+						Hello there, I'm
+						<div class="name">
+							<span style="--i: 1">I</span>
+							<span style="--i: 2">v</span>
+							<span style="--i: 3">a</span>
+							<span style="--i: 4">n</span>
+							<!-- &nbsp is an empty character -->
+							<span style="--i: 5">&nbsp </span>
+							<span style="--i: 6">F</span>
+							<span style="--i: 7">e</span>
+							<span style="--i: 8">r</span>
+							<span style="--i: 9">n</span>
+							<span style="--i: 10">a</span>
+							<span style="--i: 11">n</span>
+							<span style="--i: 12">d</span>
+							<span style="--i: 13">e</span>
+							<span style="--i: 14">z</span>
+						</div>
+					</h1>
+					<h2>I'm into everything computer related</h2>
+					<p>I'm a 21yo student aspiring to pursue a carreer in multimedia.</p>
+					<p>I enjoy testing out my brain by doing different brain teasers and such. I also love coding for the same reason. Finding a solution to problems or making my code more efficient is a fun little challenge to me.</p>
+					<p>When I'm not doing that you'll still probably find me on my computer learning new skills or just messing around with some games.</p>
 				</div>
+			
+					<a class="button" href="aboutMe.html">About me</a>
+				
+					<a class="button" href="interest.html">Interests</a>
+				
 			</header>
 		</div>
-		<div class="wrapper">
-			<section class="about-me">
-				<div>
-					<img src="images/CloseUp.png" class="closeUp" alt="" />
-				</div>
-				<div>
-					<h2>Who Am I?</h2>
-					<p>I'm a 21 year old College student following a bachelors degree in Multimedia and Creative Technology. With a passion for Programming and Animation.</p>
-					<br />
-					<h2>Background</h2>
-					<p>I'm a Chilean born in Brussels (Chile is a country in south-america). My first language is spanish but i'm also proficient in English, Dutch and French.</p>
-					<br />
-					<h2>Experience</h2>
-					<p>
-						I have programmed in various different coding-languages which include; Python, Assembly x84, Javascript, Racket r5rs and r7rs and more. I have also a decent amount of knowledge about blender 3D. Last but not least am I also learning
-						various adobe programs like photoshop and premier pro.
-					</p>
-					<br />
-					<p>Thanks for stopping by! I'm always open to new connections and collaborations. Feel free to contact me if you want to chat or explore potential opportunities.</p>
-				</div>
-			</section>
-		</div>
+
 		<footer>
 			<div class="socials">
 				<div class="handles">

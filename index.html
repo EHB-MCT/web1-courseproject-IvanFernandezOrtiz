@@ -3,93 +3,46 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>About me</title>
+		<title>Homepage</title>
 		<link rel="stylesheet" href="style.css" />
 	</head>
-	<body>
-		<nav>
-			<div class="logo">
-				<a href="homepage.html">
-					<img src="images/logo.svg" class="desktop" alt="" />
-					<img src="images/logo-short.svg" class="mobile" alt="" />
-				</a>
-			</div>
-			<input id="menu-toggle" type="checkbox" />
-			<label class="menu-button-container" for="menu-toggle">
-				<div class="menu-button"></div>
-			</label>
-			<ul class="menu">
-				<li><a href="index.html" class="selected-url">Home</a></li>
-				<li><a href="interest.html" class="unselected-url">Interests</a></li>
-				<li><a href="aboutMe.html" class="unselected-url">About me</a></li>
-			</ul>
-		</nav>
-		<div class="wrapper index">
-			<header class="intro">
-				<div class="title">
-					<h1>
-						Hello there, I'm
-						<div class="name">
-							<span style="--i: 1">I</span>
-							<span style="--i: 2">v</span>
-							<span style="--i: 3">a</span>
-							<span style="--i: 4">n</span>
-							<span style="--i: 5">&nbsp </span>
-							<span style="--i: 6">F</span>
-							<span style="--i: 7">e</span>
-							<span style="--i: 8">r</span>
-							<span style="--i: 9">n</span>
-							<span style="--i: 10">a</span>
-							<span style="--i: 11">n</span>
-							<span style="--i: 12">d</span>
-							<span style="--i: 13">e</span>
-							<span style="--i: 14">z</span>
-						</div>
-					</h1>
-					<h2>I'm into everything computer related</h2>
-					<p>I'm a 21yo student aspiring to pursue a carreer in multimedia.</p>
-					<p>I enjoy testing out my brain by doing different brain teasers and such. I also love coding for the same reason. Finding a solution to problems or making my code more efficient is a fun little challenge to me.</p>
-					<p>When I'm not doing that you'll still probably find me on my computer learning new skills or just messing around with some games.</p>
-				</div>
-				<a class="button" href="aboutMe.html">About me</a>
+	<body class="homepage-wrapper">
+		<div class="homepage">
+			<header>
+				<h1>
+					Ivan <br />
+					Fernandez
+				</h1>
 			</header>
-		</div>
 
-		<footer>
-			<div class="socials">
-				<div class="handles">
-					<div>
-						<a href="#">
-							<img src="images/twitter.png" alt="" />
-							<p class="handle-name">@twitterHandle</p>
+			<div class="Menu">
+				<ul class="Menu-list">
+					<li class="Menu-list-item">
+						<a href="home.html">
+							Home
+
+							<span class="Mask"><span>Home</span></span>
+
+							<span class="Mask"><span>Home</span></span>
 						</a>
-					</div>
-					<div>
-						<a href="#">
-							<img src="images/instagram.png" alt="" />
-							<p class="handle-name">@instagramHandle</p>
+					</li>
+					<li class="Menu-list-item">
+						<a href="interest.html">
+							Interests
+							<span class="Mask"><span>interests</span></span>
+							<span class="Mask"><span>interests</span></span>
 						</a>
-					</div>
-					<div>
-						<a href="#">
-							<img src="images/facebook.png" alt="" />
-							<p class="handle-name">@facebookHandle</p>
+					</li>
+
+					<li class="Menu-list-item">
+						<a href="aboutMe.html">
+							about
+							<span class="Mask"><span>about</span></span>
+							<span class="Mask"><span>about</span></span>
 						</a>
-					</div>
-				</div>
+					</li>
+				</ul>
 			</div>
-			<div class="contact">
-				<div class="contact-info">
-					<div>
-						<img src="images/ring-phone.png" alt="" />
-						<p>+32 468 30 59 69</p>
-					</div>
-					<div>
-						<img src="images/mail.png" alt="" />
-						<p>Ivan.Fernandez.Ortiz@student.ehb.be</p>
-					</div>
-				</div>
-			</div>
-		</footer>
+		</div>
 	</body>
 </html>
